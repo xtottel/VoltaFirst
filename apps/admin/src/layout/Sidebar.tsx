@@ -12,6 +12,19 @@ import {
   LockKeyhole,
   FileChartPie,
   Clapperboard,
+  Users,
+  MessageSquare,
+  Palette,
+  LineChart,
+  Bookmark,
+  Bell,
+  Globe,
+  Mail,
+  Shield,
+  Database,
+  HelpCircle,
+  Tag,
+  Calendar,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
@@ -48,6 +61,24 @@ const sectionIcons = {
   "Reports": FileChartPie,
   "Settings": Cog,
   "Credits": CreditCard,
+
+  // New blog/admin icons
+  "Content": FileText,
+  "Posts": FileText,
+  "Media": Image,
+  "Users": Users,
+  "Comments": MessageSquare,
+  "Appearance": Palette,
+  "Analytics": LineChart,
+  "Categories": Bookmark,
+  "Tags": Tag,
+  "Notifications": Bell,
+  "Newsletter": Mail,
+  "SEO": Globe,
+  "Security": Shield,
+  "Backups": Database,
+  "Help": HelpCircle,
+  "Events": Calendar,
 } as const;
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
@@ -130,11 +161,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                                     ? 'bg-primary/30'
                                     : 'bg-white/10 group-hover/button:bg-primary/30'
                                 }`}>
-                                  <IconComponent className={`size-4 transition-colors duration-300 ${
-                                    isActive
+                                  <IconComponent className={`size-4 transition-colors duration-300 ${isActive
                                       ? 'text-white'
-                                      : 'text-white/80 group-hover/button:text-white'
-                                  }`} />
+                                      : 'text-white/80 group-hover/button:text-white'}`} src={""} alt={""} />
                                 </div>
                                 <span className={`font-medium text-sm transition-colors duration-300 ${
                                   isActive
@@ -223,11 +252,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                                   ? 'bg-primary/30'
                                   : 'bg-white/10 group-hover/button:bg-primary/30'
                               }`}>
-                                <IconComponent className={`size-4 transition-colors duration-300 ${
-                                  isActive
-                                    ? 'text-white'
-                                    : 'text-white/80 group-hover/button:text-white'
-                                }`} />
+                                <IconComponent className={`size-4 transition-colors duration-300 ${isActive
+                                      ? 'text-white'
+                                      : 'text-white/80 group-hover/button:text-white'}`} src={""} alt={""} />
                               </div>
                               <span className={`font-medium text-sm transition-colors duration-300 ${
                                 isActive

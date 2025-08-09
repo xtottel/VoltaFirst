@@ -2,51 +2,52 @@
   "navMain": [
     {
       "title": "Dashboard",
-      "url": "/home"
+      "url": "/admin",
+      "icon": "dashboard"
     },
     {
-      "title": "Get Started",
-      "url": "/home/get-started"
-    },
-    {
-      "title": "SMS",
-      "url": "/home/sms",
+      "title": "Content",
+      "url": "/admin/content",
+      "icon": "post",
       "items": [
-        { "title": "Send SMS", "url": "/home/sms/send" },
-        { "title": "Sender IDs", "url": "/home/sms/sender-ids" },
-        { "title": "Templates", "url": "/home/sms/templates" }
+        { "title": "All Posts", "url": "/admin/content/posts" },
+        { "title": "New Post", "url": "/admin/content/new" },
+        { "title": "Categories", "url": "/admin/content/categories" },
+        { "title": "Tags", "url": "/admin/content/tags" }
       ]
     },
     {
-      "title": "OTP",
-      "url": "/home/otp",
+      "title": "Media",
+      "url": "/admin/media",
+      "icon": "image",
       "items": [
-        { "title": "Overview", "url": "/home/otp/overview" },
-        { "title": "Reports", "url": "/home/otp/reports" }
+        { "title": "Library", "url": "/admin/media/library" },
+        { "title": "Upload", "url": "/admin/media/upload" }
       ]
     },
     {
-      "title": "Reports",
-      "url": "/home/reports",
+      "title": "Users",
+      "url": "/admin/users",
+      "icon": "people",
       "items": [
-        {
-          "title": "SMS History",
-          "url": "/home/reports/sms/history"
-        }
+        { "title": "All Users", "url": "/admin/users" },
+        { "title": "Add New", "url": "/admin/users/new" },
+        { "title": "Roles", "url": "/admin/users/roles" }
       ]
     },
     {
-      "title": "Credits",
-      "url": "/home/credits",
+      "title": "Comments",
+      "url": "/admin/comments",
+      "icon": "comment"
+    }, 
+    {
+      "title": "Analytics",
+      "url": "/admin/analytics",
+      "icon": "analytics",
       "items": [
-        {
-          "title": "Buy Credits",
-          "url": "/home/credits/buy"
-        },
-        {
-          "title": "Invoices",
-          "url": "/home/credits/invoices"
-        }
+        { "title": "Overview", "url": "/admin/analytics" },
+        { "title": "Traffic", "url": "/admin/analytics/traffic" },
+        { "title": "Popular Content", "url": "/admin/analytics/popular" }
       ]
     }
   ]
