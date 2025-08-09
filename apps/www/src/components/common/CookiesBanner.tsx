@@ -3,9 +3,9 @@
 
 import { useEffect, useState } from 'react';
 import { useCookies } from '@/context/CookiesContext';
-import { X, Cookie, ChevronRight } from 'lucide-react';
+import { X, Cookie } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Link from 'next/link';
+//import Link from 'next/link';
 
 export const CookiesBanner = () => {
   const { cookiesAccepted, setCookiesAccepted } = useCookies();
@@ -85,14 +85,14 @@ export const CookiesBanner = () => {
                 </button>
               </div>
 
-              <div className="mt-3 text-center">
+              {/* <div className="mt-3 text-center">
                 <Link 
                   href="/legal/cookie-policy" 
                   className="inline-flex items-center text-xs text-blue-600 dark:text-blue-400 hover:underline"
                 >
                   Cookie Policy <ChevronRight className="h-3 w-3 ml-1" />
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </motion.div>

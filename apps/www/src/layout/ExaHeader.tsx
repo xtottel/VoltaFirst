@@ -79,7 +79,7 @@ export function ExaHeader() {
             onClick={closeAllMenus}
           >
             <Image
-              src="/images/logo.png" // Update with your blog logo path
+              src="https://cdn.sendexa.co/images/logo/exaweb.png" // Update with your blog logo path
               width={120}
               height={40}
               alt="Blog Logo"
