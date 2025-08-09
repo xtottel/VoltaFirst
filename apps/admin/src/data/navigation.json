@@ -1,0 +1,53 @@
+{
+  "navMain": [
+    {
+      "title": "Dashboard",
+      "url": "/home"
+    },
+    {
+      "title": "Get Started",
+      "url": "/home/get-started"
+    },
+    {
+      "title": "SMS",
+      "url": "/home/sms",
+      "items": [
+        { "title": "Send SMS", "url": "/home/sms/send" },
+        { "title": "Sender IDs", "url": "/home/sms/sender-ids" },
+        { "title": "Templates", "url": "/home/sms/templates" }
+      ]
+    },
+    {
+      "title": "OTP",
+      "url": "/home/otp",
+      "items": [
+        { "title": "Overview", "url": "/home/otp/overview" },
+        { "title": "Reports", "url": "/home/otp/reports" }
+      ]
+    },
+    {
+      "title": "Reports",
+      "url": "/home/reports",
+      "items": [
+        {
+          "title": "SMS History",
+          "url": "/home/reports/sms/history"
+        }
+      ]
+    },
+    {
+      "title": "Credits",
+      "url": "/home/credits",
+      "items": [
+        {
+          "title": "Buy Credits",
+          "url": "/home/credits/buy"
+        },
+        {
+          "title": "Invoices",
+          "url": "/home/credits/invoices"
+        }
+      ]
+    }
+  ]
+}

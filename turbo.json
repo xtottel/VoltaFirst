@@ -1,0 +1,56 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build", "^db:generate"],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        ".env*",
+        "next.config.js",
+        "tsconfig.json",
+        "package.json"
+      ],
+      "outputs": [".next/**", "!.next/cache/**"],
+      "env": [
+        "SMTP_PASSWORD",
+        "SMTP_FROM_EMAIL",
+        "EMAIL_SERVER_HOST",
+        "EMAIL_SERVER_PORT",
+        "EMAIL_SECURE",
+        "EMAIL_SERVER_USER",
+        "EMAIL_SERVER_PASSWORD",
+        "EMAIL_FROM",
+        "ADMIN_EMAIL",
+        "HUBTEL_CLIENT_ID",
+        "HUBTEL_CLIENT_SECRET",
+        "RESEND_API_KEY",
+        "NEXT_PUBLIC_KAIROS_API_KEY",
+        "NEXT_PUBLIC_KAIROS_API_SECRET",
+        "DATABASE_URL"
+      ]
+    },
+    "lint": {
+      "outputs": [],
+      "dependsOn": ["^lint"]
+    },
+    "check-types": {
+      "dependsOn": ["^check-types"]
+    },
+    "dev": {
+      "dependsOn": ["^db:generate"],
+      "cache": false,
+      "persistent": true
+    },
+    "db:generate": {
+      "cache": false
+    },
+    "db:migrate": {
+      "cache": false,
+      "persistent": true
+    },
+    "db:deploy": {
+      "cache": false
+    }
+  }
+}
