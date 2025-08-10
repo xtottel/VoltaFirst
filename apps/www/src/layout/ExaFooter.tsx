@@ -97,9 +97,9 @@ export const ExaFooter = () => {
                 whileTap={{ scale: 0.98 }}
               >
                 <Image
-                  src="https://cdn.sendexa.co/images/logo/exaweb.png" // Update with your blog logo path
+                  src="/VoltaFirst.png" // Update with your blog logo path
                   width={160}
-                  height={32}
+                  height={40}
                   alt="VoltaFirst Logo"
                   className="h-10 w-auto"
                   priority

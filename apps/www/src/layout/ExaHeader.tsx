@@ -79,11 +79,11 @@ export function ExaHeader() {
             onClick={closeAllMenus}
           >
             <Image
-              src="https://cdn.sendexa.co/images/logo/exaweb.png" // Update with your blog logo path
+              src="/VoltaFirst.png" // Update with your blog logo path
               width={120}
               height={40}
               alt="Blog Logo"
-              className="h-8 w-auto"
+              className="h-10 w-auto"
             />
           </Link>
 
@@ -120,7 +120,7 @@ export function ExaHeader() {
                 onClick={() => (window.location.href = "/live")}
               >
                 <Radio className="w-4 h-4" />
-                <span>Live</span>
+                <span>Live TV</span>
                 {/* <span className="absolute top-1.5 right-1.5 h-2 w-2 rounded-full bg-red-500 animate-pulse"></span> */}
               </Button>
             </motion.div>
@@ -173,11 +173,11 @@ export function ExaHeader() {
                   onClick={closeAllMenus}
                 >
                   <Image
-                    src="https://cdn.sendexa.co/images/logo/exaweb.png" // Update with your blog logo path
+                    src="/VoltaFirst.png" // Update with your blog logo path
                     width={120}
                     height={40}
                     alt="Blog Logo"
-                    className="h-8 w-auto"
+                    className="h-10 w-auto"
                   />
                 </Link>
 
@@ -222,7 +222,7 @@ export function ExaHeader() {
                       }}
                     >
                       <Radio className="w-4 h-4" />
-                      <span>Live</span>
+                      <span>Live TV</span>
                       {/* <span className="ml-auto h-2 w-2 rounded-full bg-red-500 animate-pulse"></span> */}
                     </Button>
                   </motion.div>
