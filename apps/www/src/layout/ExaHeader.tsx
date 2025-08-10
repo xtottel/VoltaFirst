@@ -40,8 +40,8 @@ export const navItems = [
     href: "/lifestyle",
   },
   {
-    name: "Opinion",
-    href: "/opinion",
+    name: "Technology",
+    href: "/tech",
   },
 ];
 

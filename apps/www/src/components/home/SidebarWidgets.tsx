@@ -1,27 +1,27 @@
-import { Card, CardContent, CardHeader } from '@/ui/card';
-import Button from '@/ui/Button';
-import { Input } from '@/ui/input';
-import Link from 'next/link';
-import { Mail, Flame } from 'lucide-react';
-import Image from 'next/image';
+import { Card, CardContent, CardHeader } from "@/ui/card";
+import Button from "@/ui/Button";
+import { Input } from "@/ui/input";
+import Link from "next/link";
+import { Mail, Flame } from "lucide-react";
+import Image from "next/image";
 
 export function SidebarWidgets() {
   const trendingArticles = [
     {
       title: "New Tourism Initiative Launched",
       image: "https://cdn.sendexa.co/images/carousel/messaging.jpg",
-      link: "#"
+      link: "#",
     },
     {
       title: "Political Debate Heats Up",
       image: "https://cdn.sendexa.co/images/carousel/messaging.jpg",
-      link: "#"
+      link: "#",
     },
     {
       title: "Local Athlete Wins Gold",
       image: "https://cdn.sendexa.co/images/carousel/messaging.jpg",
-      link: "#"
-    }
+      link: "#",
+    },
   ];
 
   return (
@@ -29,7 +29,10 @@ export function SidebarWidgets() {
       {/* Ads Widget */}
       <Card className="overflow-hidden border border-green-500/20 shadow-sm">
         <CardContent className="p-0">
-          <Link href="https://sendexa.co/" className="block relative w-full aspect-video group">
+          <Link
+            href="https://sendexa.co/"
+            className="block relative w-full aspect-video group"
+          >
             <Image
               src="/ads/exa.jpg"
               alt="Advertisement"
@@ -47,7 +50,7 @@ export function SidebarWidgets() {
 
       {/* Newsletter Widget */}
       <Card className="overflow-hidden border border-primary/20 shadow-sm bg-blue-50">
-        <CardHeader className="flex flex-col items-center justify-center gap-2 p-4">
+        <CardHeader className="flex flex-row items-center justify-center gap-2 p-4">
           <Mail className="h-6 w-6 text-blue-600" />
           <h3 className="font-semibold text-blue-600">Stay Updated</h3>
         </CardHeader>
