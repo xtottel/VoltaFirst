@@ -45,7 +45,7 @@ export function LifestyleSection() {
         <h2 className="text-3xl font-bold">Lifestyle & Culture</h2>
         <Link 
           href="/lifestyle" 
-          className="text-sm font-medium text-[#e63946] hover:underline"
+          className="text-sm font-medium text-[#f8971d] hover:underline"
         >
           View All Lifestyle News →
         </Link>
